@@ -1,8 +1,8 @@
 dn: cn=config
 changetype: modify
 add: olcServerID
-olcServerID: 1 ldaps://192.168.1.2/
-olcServerID: 2 ldaps://192.168.1.3/
+olcServerID: 1 ldap://192.168.1.2/
+olcServerID: 2 ldap://192.168.1.3/
 
 dn: olcOverlay=syncprov,olcDatabase={0}config,cn=config
 changetype: add
@@ -14,7 +14,7 @@ dn: olcDatabase={0}config,cn=config
 changetype:modify
 add: olcSyncrepl
 olcSyncrepl: rid=001
-  provider=ldaps://192.168.1.2
+  provider=ldap://192.168.1.2
   binddn="cn=config"
   bindmethod=simple
   credentials=password
@@ -23,7 +23,7 @@ olcSyncrepl: rid=001
   retry="5 5 300 +"
   timeout=1
 olcSyncrepl: rid=002
-  provider=ldaps://192.168.1.3
+  provider=ldap://192.168.1.3
   binddn="cn=config"
   bindmethod=simple
   credentials=password
