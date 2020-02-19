@@ -1,3 +1,15 @@
+dn: cn=config
+changetype: modify
+add: olcServerID
+olcServerID: 1 ldaps://192.168.1.2/
+olcServerID: 2 ldaps://192.168.1.3/
+
+dn: olcOverlay=syncprov,olcDatabase={0}config,cn=config
+changetype: add
+objectClass: olcOverlayConfig
+objectClass: olcSyncProvConfig
+olcOverlay: syncprov
+
 dn: olcDatabase={0}config,cn=config
 changetype:modify
 add: olcSyncrepl
@@ -19,7 +31,6 @@ olcSyncrepl: rid=002
   type=refreshAndPersist
   retry="5 5 300 +"
   timeout=1
-
 -
 add: olcMirrorMode
 olcMirrorMode: TRUE
