@@ -7,4 +7,5 @@ get all confi:
 # ldapadd 
 replace "password" with real ones
 replace "manager" with real admin name
+test TLS
 ```
