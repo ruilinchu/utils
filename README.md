@@ -9,7 +9,7 @@ replace "password" with real ones
 replace "manager" with real admin name
 confrep on all server
 datarep on one
-test TLS
+x TLS
 
 slapd.ldif:
 olcModuleload:  back_mdb.la
