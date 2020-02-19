@@ -11,6 +11,7 @@ confrep on all server
 datarep on one
 test TLS
 
+slapd.ldif:
 olcModuleload:  back_mdb.la
 olcModuleload:  syncprov.la
 
