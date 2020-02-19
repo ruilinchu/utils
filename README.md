@@ -7,5 +7,7 @@ get all confi:
 # ldapadd 
 replace "password" with real ones
 replace "manager" with real admin name
+confrep on all server
+datarep on one
 test TLS
 ```
