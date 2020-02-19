@@ -10,4 +10,11 @@ replace "manager" with real admin name
 confrep on all server
 datarep on one
 test TLS
+
+olcModuleload:  back_mdb.la
+olcModuleload:  syncprov.la
+
+dn: olcDatabase={-1}frontend,cn=config
+olcPasswordHash: {SSHA}
+dn: olcDatabase={0}config,cn=config
 ```
