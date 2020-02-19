@@ -10,6 +10,7 @@ replace "manager" with real admin name
 confrep on all server
 datarep on one
 x TLS
+failover works
 
 slapd.ldif:
 olcModuleload:  back_mdb.la
