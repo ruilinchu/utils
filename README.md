@@ -19,4 +19,18 @@ olcModuleload:  syncprov.la
 dn: olcDatabase={-1}frontend,cn=config
 olcPasswordHash: {SSHA}
 dn: olcDatabase={0}config,cn=config
+
+
+[root@test1]# rpm -ql openldap-clients
+/usr/bin/ldapadd
+/usr/bin/ldapcompare
+/usr/bin/ldapdelete
+/usr/bin/ldapexop
+/usr/bin/ldapmodify
+/usr/bin/ldapmodrdn
+/usr/bin/ldappasswd
+/usr/bin/ldapsearch
+/usr/bin/ldapurl
+/usr/bin/ldapwhoami
+
 ```
