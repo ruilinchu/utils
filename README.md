@@ -8,7 +8,7 @@ get all confi:
 replace "password" with real ones
 replace "manager" with real admin name
 confrep on all server
-datarep on one
+datarep on first server
 x TLS
 failover works
 
