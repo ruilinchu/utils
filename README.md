@@ -33,4 +33,15 @@ dn: olcDatabase={0}config,cn=config
 /usr/bin/ldapurl
 /usr/bin/ldapwhoami
 
+[root@test1]# rpm -ql openldap-servers:
+/usr/sbin/slapacl
+/usr/sbin/slapadd
+/usr/sbin/slapauth
+/usr/sbin/slapcat
+/usr/sbin/slapd
+/usr/sbin/slapdn
+/usr/sbin/slapindex
+/usr/sbin/slappasswd
+/usr/sbin/slapschema
+/usr/sbin/slaptest
 ```
