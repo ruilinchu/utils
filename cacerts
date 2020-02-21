@@ -4,9 +4,12 @@ openssl genrsa -aes256 -out ca.key.pem 4096
 openssl req -new -x509 -days 9125 -key ca.key.pem -extensions v3_ca -out ca.cert.pem
 
 #gen server key and ca request
-openssl req -days 9125 -nodes -new -keyout ldap1/ldap1.key -out ldap1/ldap1.csr
+openssl req -nodes -new -keyout ldap1/ldap1.key -out ldap1/ldap1.csr
 #sign this request with CA
 openssl x509 -req -days 9125 -in ldap1/ldap1.csr -out ldap1/ldap1.crt -CA ca.cert.pem -CAkey ca.key.pem -CAcreateserial
 
 #verify expire day
 openssl x509 -enddate -noout -in ldap1/ldap1.crt
+
+openssl req -nodes -new -keyout ldap2/ldap2.key -out ldap2/ldap2.csr
+openssl x509 -req -days 9125 -in ldap2/ldap2.csr -out ldap2/ldap2.crt -CA ca.cert.pem -CAkey ca.key.pem -CAcreateserial
