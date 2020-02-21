@@ -9,7 +9,7 @@ replace "password" with real ones
 replace "manager" with real admin name
 confrep on all server
 datarep on first server
-x TLS
+TLS works, but don't use self singed CA
 failover works
 
 slapd.ldif:
