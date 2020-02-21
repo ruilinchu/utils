@@ -12,7 +12,7 @@ olcSyncrepl: rid=003
   binddn="cn=manager,dc=bla,dc=edu"
   bindmethod=simple
   credentials=password
-  searchbase="dc=hpc,dc=usc.edu"
+  searchbase="dc=bla,dc=edu"
   type=refreshAndPersist
   retry="5 5 300 +"
   timeout=1
@@ -21,7 +21,7 @@ olcSyncrepl: rid=004
   binddn="cn=manager,dc=bla,dc=edu"
   bindmethod=simple
   credentials=password
-  searchbase="dc=hpc,dc=usc.edu"
+  searchbase="dc=bla,dc=edu"
   type=refreshAndPersist
   retry="5 5 300 +"
   timeout=1
